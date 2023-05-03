@@ -160,7 +160,7 @@ function interpret(program: Program): void {
   return program.interpret();
 }
 
-//get length of array
+// get length of array
 const sample1: Program = new Program(
   new Block([
     new PrintStatement(
@@ -168,7 +168,7 @@ const sample1: Program = new Program(
     )])
 )
 
-//get negative value
+// get negative value
 const sample2 = new Program(
   new Block([
     new PrintStatement(

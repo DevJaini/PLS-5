@@ -205,11 +205,11 @@ class UnaryExpression {
 function interpret(program) {
     return program.interpret();
 }
-//get length of array
+// get length of array
 const sample1 = new Program(new Block([
     new PrintStatement(new ArrayLiteral("length", new Array(3)))
 ]));
-//get negative value
+// get negative value
 const sample2 = new Program(new Block([
     new PrintStatement(new UnaryExpression("-", new Numeral(Math.floor(100 + Math.random() * 900))))
 ]));
