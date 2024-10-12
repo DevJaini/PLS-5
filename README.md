@@ -63,7 +63,7 @@ To set up the project, follow these steps:
 1. Initialize Node Package Manager
 
 ```bash
-   npm init
+npm init
 ```
 
 2. Changes in package.json
