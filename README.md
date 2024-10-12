@@ -62,25 +62,25 @@ To set up the project, follow these steps:
 
 1. Initialize Node Package Manager
 
-   ```bash
+```bash
    npm init
-   ```
+```
 
 2. Changes in package.json
 Update your package.json to include:
 
-  ```bash
+```bash
 {
   "type": "module",
   "main": "bella.js"
 }
-  ```
+```
 
 3. Initialize TypeScript Configuration
 
-  ```bash
+```bash
 tsc --init
-  ```
+```
 
 4. Changes in tsconfig.json
 Update your tsconfig.json to include:
@@ -92,7 +92,7 @@ Update your tsconfig.json to include:
     "module": "esnext"
   }
 }
-  ```
+```
 
 5. Compile TypeScript to JavaScript
 Use the following command to compile TypeScript files:
