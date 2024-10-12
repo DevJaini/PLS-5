@@ -56,66 +56,54 @@ An interpreter for the Bella programming language extension is implemented in Ty
 - Array and subscript expressions.
 - Conditionals and print statements.
 
-### Sample Invocation
-
-To run the interpreter, use the following sample code:
-
-```typescript
-const sample: Program = new Program(
-  new Block([new PrintStatement(new Numeral(5))])
-);
-
-interpret(sample);
-
-Setup Instructions
+## Setup Instructions
 
 To set up the project, follow these steps:
 
-	1.	Initialize Node Package Manager
+1. Initialize Node Package Manager
 
-npm init
+   ```bash
+   npm init
+   ```
 
-
-	2.	Changes in package.json
+2. Changes in package.json
 Update your package.json to include:
 
+  ```bash
 {
   "type": "module",
   "main": "bella.js"
 }
+  ```
 
+3. Initialize TypeScript Configuration
 
-	3.	Initialize TypeScript Configuration
-
+  ```bash
 tsc --init
+  ```
 
-
-	4.	Changes in tsconfig.json
+4. Changes in tsconfig.json
 Update your tsconfig.json to include:
 
+```bash
 {
   "compilerOptions": {
     "target": "esnext",
     "module": "esnext"
   }
 }
+  ```
 
-
-	5.	Compile TypeScript to JavaScript
+5. Compile TypeScript to JavaScript
 Use the following command to compile TypeScript files:
 
+```bash
 tsc --watch  # Compiles bella.ts to bella.js
+```
 
-
-	6.	Run the Interpreter
+6. Run the Interpreter
 After compiling, run the interpreter with:
 
+```bash
 node bella.js  # OUTPUT
-
-## Usage
-
-To use this repository:
-
-	1.	Clone the repository to your local machine.
-	2.	Install the necessary dependencies (if applicable).
-	3.	Run the interpreter with your desired Bella program representation.
+```
